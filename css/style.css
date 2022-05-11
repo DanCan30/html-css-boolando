@@ -115,7 +115,7 @@ main {
     position: relative;
 }
 
-.primary-img:hover {
+.img-container:hover .primary-img {
     cursor: pointer;
     display: none;
 }
