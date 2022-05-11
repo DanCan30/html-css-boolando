@@ -37,7 +37,6 @@ nav {
 
 nav div {
     width: 33%;
-    text-align: center;
 }
 
 nav a {
@@ -50,8 +49,16 @@ nav a:hover, i:hover {
     cursor: pointer;
 }
 
+.logo {
+    text-align: center;
+}
+
 nav img {
     width: 150px;
+}
+
+.menu {
+    text-align: right;
 }
 
 nav i {
@@ -61,4 +68,97 @@ nav i {
 nav a, i {
     color: white;
     padding: 5px;
+}
+
+
+
+
+/* Main */
+
+main {
+    width: 80%;
+    padding-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 30%;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.img-container {
+    position: relative;
+}
+
+.label-container {
+    position: absolute;
+    bottom: 50px;
+    z-index: 2;
+}
+
+.card img {
+    width: 100%;
+}
+
+.primary-img{
+    position: absolute;
+    z-index: 1;
+}
+
+.hovered-img {
+    position: relative;
+}
+
+.primary-img:hover {
+    cursor: pointer;
+    display: none;
+}
+
+.label {
+    display: inline-block;
+    color: white;
+    padding: 3px 5px;
+}
+
+.sale {
+    background: red;
+}
+
+.eco {
+    background: green;
+}
+
+.favourite {
+    display: inline-block;
+    font-size: 40px;
+    padding: 5px 15px;
+    text-align: center;
+    background: white;
+    color: black;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    z-index: 2;
+}
+
+.favourite:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.product-info {
+    line-height: 25px;
+}
+
+.new-price {
+    color: red;
+    font-weight: bold;
+}
+
+.price {
+    color: #13191F;
+    text-decoration: line-through;
+    font-weight: normal;
 }
