@@ -1,0 +1,64 @@
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.centered-container {
+    width: 80%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.flx {
+    display: flex;
+}
+
+
+
+
+/* Header */
+
+header {
+    background: #FF6900;
+}
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 10px;
+}
+
+nav div {
+    width: 33%;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover, i:hover {
+    color: black;
+    cursor: pointer;
+}
+
+nav img {
+    width: 150px;
+}
+
+nav i {
+    font-size: 20px;
+}
+
+nav a, i {
+    color: white;
+    padding: 5px;
+}
