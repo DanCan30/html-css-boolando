@@ -53,12 +53,12 @@ nav a:hover,  nav i:hover {
     cursor: pointer;
 }
 
-.logo {
-    text-align: center;
-}
-
 nav img {
     width: 150px;
+}
+
+.logo {
+    text-align: center;
 }
 
 .menu {
@@ -93,12 +93,14 @@ main {
 }
 
 .img-container {
+    cursor: pointer;
     position: relative;
 }
 
 .label-container {
     position: absolute;
     bottom: 50px;
+    left: 0;
     z-index: 2;
 }
 
@@ -106,18 +108,19 @@ main {
     width: 100%;
 }
 
-.primary-img{
-    position: absolute;
-    z-index: 1;
+.primary-img {
+    display: inline-block;
 }
 
-.hovered-img {
-    position: relative;
+.secondary-img {
+    display: none;
 }
 
 .img-container:hover .primary-img {
-    cursor: pointer;
     display: none;
+}
+.img-container:hover .secondary-img {
+    display: inline-block;
 }
 
 .label {
@@ -190,9 +193,7 @@ footer a {
 }
 
 footer i {
-    display: inline-block;
     font-size: 24px;
-    margin: 20px 3px;
 }
 
 footer a:hover {
@@ -201,5 +202,4 @@ footer a:hover {
 
 footer a:hover, footer i:hover {
     color: #FF6900;
-    cursor: pointer;
 }
